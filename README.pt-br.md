@@ -15,16 +15,19 @@ Métricas são medidas quantificáveis que nos permitem analisar o resultado de 
 
 ### **Matriz de Confusão**
 
-A Matriz de Confusão é uma tabela que visualiza o desempenho de um algoritmo, comparando as classes reais com as classes previstas pelo modelo. Ela nos permite ver não apenas quantos acertos e erros o modelo cometeu, mas também os *tipos* de acertos e erros.
+[cite_start]A Matriz de Confusão é uma tabela que visualiza o desempenho de um algoritmo, comparando as classes reais com as classes previstas pelo modelo[cite: 49]. Ela nos permite ver não apenas quantos acertos e erros o modelo cometeu, mas também os *tipos* de acertos e erros.
 
-| | Classe Predita: Positiva | Classe Predita: Negativa |  
-| Classe Real: Positiva | VP (Verdadeiro Positivo) | FN (Falso Negativo) |  
-| Classe Real: Negativa | FP (Falso Positivo) | VN (Verdadeiro Negativo) |
+|                | **Classe Predita: Positiva** | **Classe Predita: Negativa** |
+| :------------- | :--------------------------: | :--------------------------: |
+| **Classe Real: Positiva** |       VP (Verdadeiro Positivo)       |        FN (Falso Negativo)       |
+| **Classe Real: Negativa** |       FP (Falso Positivo)        |       VN (Verdadeiro Negativo)       |
 
-* **VP (Verdadeiro Positivo):** Acerto. O modelo previu "Positivo" e o real era "Positivo".  
-* **VN (Verdadeiro Negativo):** Acerto. O modelo previu "Negativo" e o real era "Negativo".  
-* **FP (Falso Positivo):** Erro do Tipo I. O modelo previu "Positivo", mas o real era "Negativo".  
+* **VP (Verdadeiro Positivo):** Acerto. O modelo previu "Positivo" e o real era "Positivo".
+* **VN (Verdadeiro Negativo):** Acerto. O modelo previu "Negativo" e o real era "Negativo".
+* **FP (Falso Positivo):** Erro do Tipo I. O modelo previu "Positivo", mas o real era "Negativo".
 * **FN (Falso Negativo):** Erro do Tipo II. O modelo previu "Negativo", mas o real era "Positivo".
+
+A partir desses quatro valores, podemos calcular diversas métricas para entender o comportamento do nosso modelo.
 
 A partir desses quatro valores, podemos calcular diversas métricas para entender o comportamento do nosso modelo.
 
