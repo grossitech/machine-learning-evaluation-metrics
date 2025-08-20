@@ -15,7 +15,7 @@ Métricas são medidas quantificáveis que nos permitem analisar o resultado de 
 
 ### **Matriz de Confusão**
 
-[cite_start]A Matriz de Confusão é uma tabela que visualiza o desempenho de um algoritmo, comparando as classes reais com as classes previstas pelo modelo[cite: 49]. Ela nos permite ver não apenas quantos acertos e erros o modelo cometeu, mas também os *tipos* de acertos e erros.
+A Matriz de Confusão é uma tabela que visualiza o desempenho de um algoritmo, comparando as classes reais com as classes previstas pelo modelo[cite: 49]. Ela nos permite ver não apenas quantos acertos e erros o modelo cometeu, mas também os *tipos* de acertos e erros.
 
 |                | **Classe Predita: Positiva** | **Classe Predita: Negativa** |
 | :------------- | :--------------------------: | :--------------------------: |
@@ -39,31 +39,31 @@ As seguintes métricas foram estudadas e implementadas no projeto:
 
 Mede o percentual geral de acertos do modelo. É a métrica mais simples, mas pode ser enganosa em datasets desbalanceados.
 
-* **Fórmula:** (VP \+ VN) / (VP \+ VN \+ FP \+ FN)
+* **Fórmula:** `(VP \+ VN) / (VP \+ VN \+ FP \+ FN)`
 
 #### **2\. Precisão (Precision)**
 
 Dentre todas as vezes que o modelo previu a classe "Positiva", quantas ele realmente acertou? É uma métrica importante quando o custo de um Falso Positivo é alto.
 
-* **Fórmula:** VP / (VP \+ FP)
+* **Fórmula:** `VP / (VP \+ FP)`
 
 #### **3\. Sensibilidade (Recall ou Revocação)**
 
 Dentre todos os casos que eram realmente "Positivos", quantos o modelo conseguiu identificar? É crucial quando o custo de um Falso Negativo é alto.
 
-* **Fórmula:** VP / (VP \+ FN)
+* **Fórmula:** `VP / (VP \+ FN)`
 
 #### **4\. Especificidade**
 
 Dentre todos os casos que eram realmente "Negativos", quantos o modelo conseguiu identificar?
 
-* **Fórmula:** VN / (VN \+ FP)
+* **Fórmula:** `VN / (VN \+ FP)`
 
 #### **5\. F1-Score**
 
 É a média harmônica entre a Precisão e a Sensibilidade. É uma ótima métrica para ter uma visão balanceada do desempenho, especialmente quando as classes são desiguais.
 
-* **Fórmula:** 2 \* (Precisão \* Sensibilidade) / (Precisão \+ Sensibilidade)
+* **Fórmula:** `2 * [(Precisão * Sensibilidade) / (Precisão + Sensibilidade)]`
 
 ## **💻 Implementação Prática**
 
