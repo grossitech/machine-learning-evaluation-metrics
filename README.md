@@ -1,7 +1,7 @@
 # **Project: Calculation of Machine Learning Evaluation Metrics**
 
 > 📌 This is the English version of the README.  
-> You can also read the original version in Portuguese here: [README.pt-br.md](README.pt-br.md)
+> Você também pode ler a versão em português aqui: [README.pt-br.md](README.pt-br.md)
 
 ## **📖 About the Project**
 
